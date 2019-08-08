@@ -103,19 +103,8 @@ class Post extends Component
         $this->redirect('/posts');
     }
 
-    public function mount($id)
+    public function mount($id = null)
     {
-        // if $id is null, new Post
-        if (!$id) {
-            $this->postId = null;
-        } else {
-            $this->postId = $id;
-            $post = \App\Post::find($id);
-
-            $blocks = json_decode($post->blocks, true);
-
-            $this->blocks = $blocks;
-            $this->title = $post->title;
-        }
+        $this->postId = $id;
     }
 }
