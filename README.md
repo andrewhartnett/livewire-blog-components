@@ -4,6 +4,8 @@ The livewire implementation for my blog content editor.
 # General Setup
 I assume that you have already run `php artisan make:auth`
 
+Run `php artisan make:livewire posts`
+
 Copy the files in this repo into their appropriate location.
 
 Run `php artisan migrate`
