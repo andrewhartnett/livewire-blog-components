@@ -16,7 +16,8 @@ Add the livewire assets to `layouts/app.blade.php`
 ```...
     @livewireAssets
 </body>
-</html>```
+</html>
+```
 
 Include `@livewire('posts')` wherever you want to include this livewire component
 
